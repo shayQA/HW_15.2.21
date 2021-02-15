@@ -1,0 +1,9 @@
+package com.creatures;
+
+public class Tiger extends Animal {
+    public void eat_meat()
+    {
+
+        System.out.println("Eats meat.");
+    }
+}

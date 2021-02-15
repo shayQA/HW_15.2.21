@@ -1,0 +1,19 @@
+package com.forest;
+import com.creatures.Animal;
+import com.creatures.Bear;
+import com.creatures.Monkey;
+import com.creatures.Tiger;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Bear b1= new Bear();
+        b1.catch_fish();
+        Tiger t1=new Tiger();
+        t1.eat_meat();
+        Monkey m1=new Monkey();
+        m1.eat_banana();
+
+    }
+}

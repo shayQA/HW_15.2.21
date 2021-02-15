@@ -1,0 +1,9 @@
+package com.creatures;
+
+public class Bear extends Animal {
+    public void catch_fish()
+    {
+
+        System.out.println("Catches fish.");
+    }
+}

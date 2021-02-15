@@ -1,0 +1,54 @@
+package com.company;
+
+public class Guitar {
+    private final String m_brand;
+    private final boolean m_is_electric;
+    private final int m_number_of_strings;
+    private float m_price;
+    private boolean m_tuned;
+
+    public Guitar(String m_brand, boolean m_is_electric, int m_number_of_strings, float m_price, boolean m_tuned) {
+        this.m_brand = m_brand;
+        this.m_is_electric = m_is_electric;
+        this.m_number_of_strings = m_number_of_strings;
+        this.m_price = m_price;
+        this.m_tuned = m_tuned;
+    }
+
+    public Guitar(String m_brand, boolean m_is_electric) {
+        this(m_brand, m_is_electric, 6, 50.0F, false);
+    }
+
+    public Guitar(String m_brand) {
+        this(m_brand, false, 6, 50.0F, false);
+    }
+
+    public void setM_price(float m_price) {
+        this.m_price = m_price;
+    }
+
+    public String getM_brand() {
+        return this.m_brand;
+    }
+
+    public boolean isM_is_electric() {
+        return this.m_is_electric;
+    }
+
+    public int getM_number_of_strings() {
+        return this.m_number_of_strings;
+    }
+
+    public float getM_price() {
+        return this.m_price;
+    }
+
+    public boolean isM_tuned() {
+        return this.m_tuned;
+    }
+
+    public void tuneGuitar() {
+        System.out.println("the guitar is tuned! ");
+        this.m_tuned = true;
+    }
+}
